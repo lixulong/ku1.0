@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;}
+			#ts{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			<input type="checkbox"/>
+			密码登录
+		</div>
+		<div id="ts">为了您的信息安全，请不要在网吧或公用电脑上使用此功能！</div>
+	</body>
+	<script>
+		var div1=document.getElementById('div1')
+		var ts=document.getElementById('ts')
+		div1.onmouseover=function(){
+			ts.style.display="block"
+		}
+		div1.onmouseout=function(){
+			ts.style.display="none"
+		}
+	</script>
+</html>

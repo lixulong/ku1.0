@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;}
+			html,body{
+				width: 100%;
+				height: 100%;
+			}
+			#box1{
+				width: 20px;
+				height: 20px;
+				background: red;
+				border: 5px solid #ccc;
+			}
+			#box2{
+				width: 20px;
+				height: 20px;
+				background: yellow;
+				border: 5px solid #ccc;
+			}
+			#box3{
+				width: 20px;
+				height: 20px;
+				background: black;
+				border: 5px solid #ccc;
+			}
+			#big{
+				width: 100%;
+				height: 100%;
+				background: ;
+			}
+			ul{
+				position: fixed;
+				left: 0;
+				top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="big"></div>
+		<ul>
+			<li id="box1"></li>
+			<li id="box2"></li>
+			<li id="box3"></li>
+		</ul>
+	</body>
+	<script>
+		var b1=document.getElementById('box1')
+		var b2=document.getElementById('box2')
+		var b3=document.getElementById('box3')
+		var big=document.getElementById('big')
+		b1.onclick=function(){
+			b1.style.background="white"
+			big.style.background="red"
+			b2.style.background="yellow"
+			b3.style.background="black"
+		}
+		b2.onclick=function(){
+			b2.style.background="white"
+			big.style.background="yellow"
+			b1.style.background="red"
+			b3.style.background="black"
+		}
+		b3.onclick=function(){
+			b3.style.background="white"
+			big.style.background="black"
+			b2.style.background="yellow"
+			b1.style.background="red"
+		}
+	</script>
+</html>
